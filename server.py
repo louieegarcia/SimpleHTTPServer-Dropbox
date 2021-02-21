@@ -108,6 +108,11 @@ def main():
   server = HTTPServer((LHOST,LPORT), SimpleHTTPRequestHandler)
   print('Starting server...')
   print(f'Listening on http://{LHOST}:{LPORT}')
-  server.serve_forever()
+  try:
+    server.serve_forever()
+  except KeyboardInterrupt:
+    print('Goodbye.')
+    return
+    
 
 main()
