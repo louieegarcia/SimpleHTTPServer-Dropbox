@@ -1,0 +1,15 @@
+<style>
+    .hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+</style>
+
+<html>
+<title>File Upload</title>
+<h1>Upload File Here</h1>
+
+<iframe name="hiddenFrame" class="hide"></iframe>
+
+<form action="/" method="post" enctype="multipart/form-data" target="hiddenFrame">
+    <input type="file" name="file"><br />
+    <input type="submit" value="submit">
+</form>
+</html>
