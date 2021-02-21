@@ -5,7 +5,10 @@ You can visit the webserver via a browser to upload a file or simply make a POST
 
 i.e. `curl -F "data=@<path to file>" <webserver IP>:<webserver PORT>`
 
-## Arguments
+## Usage/Arguments
+
+`Python3 server.py` will run the web server using default values. If you wish to change the values, review the arguments below.
+
 - LHOST
 
 The IP the http/https server will listen on. (Default=0.0.0.0)
